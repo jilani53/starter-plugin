@@ -1,0 +1,20 @@
+{
+    "name": "jilani/starter-plugin",
+    "description": "A starter plugin for WordPress",
+    "type": "wordpress-plugin",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "jilani53",
+            "email": "jilani.pabel@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Starter\\Plugin\\": "includes/"
+        },
+        "files": []
+    }
+}
