@@ -16,9 +16,9 @@ class Menu {
         $capability = 'manage_options';
 
         add_menu_page( __( 'Starter Plugin', 'starter' ), __( 'Starter Plugin', 'starter' ), $capability, $parent_slug, [ $this, 'registration_page' ], 'dashicons-car' );
-        add_submenu_page( $parent_slug, __( 'Registration', 'starter' ), __( 'Registration', 'starter' ), $capability, $parent_slug, [ $this, 'registration_page' ], 'dashicons-car' );
-        add_submenu_page( $parent_slug, __( 'Options', 'starter' ), __( 'Options', 'starter' ), $capability, 'options', [ $this, 'options_page' ], 'dashicons-car' );
-        add_submenu_page( $parent_slug, __( 'Settings', 'starter' ), __( 'Settings', 'starter' ), $capability, 'settings', [ $this, 'settings_page' ], 'dashicons-car' );
+        add_submenu_page( $parent_slug, __( 'Registration', 'starter' ), __( 'Registration', 'starter' ), $capability, $parent_slug, [ $this, 'registration_page' ] );
+        add_submenu_page( $parent_slug, __( 'Options', 'starter' ), __( 'Options', 'starter' ), $capability, 'options', [ $this, 'options_page' ] );
+        add_submenu_page( $parent_slug, __( 'Settings', 'starter' ), __( 'Settings', 'starter' ), $capability, 'settings', [ $this, 'settings_page' ] );
     }
 
     public function registration_page() {
